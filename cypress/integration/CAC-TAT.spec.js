@@ -9,7 +9,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
         
         cy.title().should('be.equal','Central de Atendimento ao Cliente TAT')
     })
-    it('Preencher campos e enviar o formulário', function() {
+    it.only('Preencher campos e enviar o formulário', function() {
         
         cy.get('#firstName').type('isaac')
         cy.get('#lastName').type('santos')
